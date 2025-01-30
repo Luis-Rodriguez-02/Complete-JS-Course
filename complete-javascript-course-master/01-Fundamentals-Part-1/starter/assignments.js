@@ -57,3 +57,6 @@ console.log(population > 33000000)
 // Based on the variables you created, create a new variable description which contains a string with this format: 'Portugal is in Europe, and its 11 million people speak portuguese'.
 const descriptiveString = country + " is in " + continent + ", and its " + population + " million people speak " + language;
 console.log(descriptiveString);
+
+
+
