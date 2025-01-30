@@ -15,3 +15,4 @@ var number = 23;
 console.log(namey) // We can now change the value in one place, it is stored in our memory.
 // camelCase -> proper variable naming convention
 
+// DATA TYPES
