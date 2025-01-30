@@ -53,3 +53,20 @@ console.log(typeof weirdBug); // returns object (bug) should be null type
 */
 
 // let, const and var
+/*
+let age = 30; // Declaration and Initialization
+age = 31; // Mutating a variable  -> chaning it
+
+const birthYear = 2002 // Creates a variable that cannot be mutated. Will generate a TypeError
+
+// We cannot declare const variables without initializing
+const job; // 
+
+var jobb = "programmer";
+jobb = "teacher";
+
+// var is very weird, come back to this later.
+// let is block scoped and var is function scoped.
+*/
+
+
