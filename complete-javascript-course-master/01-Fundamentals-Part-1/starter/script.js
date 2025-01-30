@@ -69,4 +69,34 @@ jobb = "teacher";
 // let is block scoped and var is function scoped.
 */
 
+// Basic Operators
+/*
+const now = 2037
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageJonas, ageSarah);
+
+console.log(ageJonas * 2, ageJonas / 10, 2 ** 3)
+// 2 ** 3 = 2 * 2 * 2 = 8
+const firstName = "Jonas";
+const lastName = "Jaffron";
+console.log(firstName + ' ' + lastName);
+
+// Assignment operators
+let x = 10 + 5; // 15
+x += 10; // 25 x = x + 10, reassigning x value
+x *= 4;
+x++; // x = x + 1
+x--; // x = x - 1
+console.log(x);
+
+// Comparison operators
+console.log(ageJonas > ageSarah); // >, <, <=, >=
+console.log(ageSarah >= 18);
+
+const isFullAge = ageSarah >= 18;
+
+console.log(now - 1991 > now - 2018);
+*/
+
 
