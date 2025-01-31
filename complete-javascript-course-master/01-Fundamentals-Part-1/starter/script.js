@@ -194,3 +194,35 @@ console.log('23' - '10' - 3) // minus operator converts strings to numbers and n
 */
 
 // 21. Truthy and Falsy values
+
+// Falsy values are values that when converted to boolean evaluate to false
+/*
+0
+""
+undefined
+null
+Nan
+*/
+// Any value that is not falsy is truthy and truthy values evaluate to true when converted to booleans
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jones'));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+// type coercion happens through if/else or logical operators
+const money = 0;
+if (money) {
+  console.log("Dont spend it all")
+} else {
+  console.log("You should get a job");
+}
+
+let height;
+if (height || height === 0) {
+  console.log("yay height is defined")
+} else {
+  console.log("height is not defined");
+}
+
+
