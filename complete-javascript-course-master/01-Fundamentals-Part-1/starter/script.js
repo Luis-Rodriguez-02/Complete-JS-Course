@@ -116,4 +116,21 @@ console.log(x, y);
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(averageAge);
 
+
+
+// 17. Strings and Template Literals
+
+const firstName = 'Luis';
+const job = 'Developer';
+const birthYear = 2002;
+const year = 2025;
+
+const luis = "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+console.log(luis);
+
+const luisNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+console.log(luisNew)
+
+// useful to insert variables and multiline strings 
+// before we would concat + vars, and use \n for multiline
 */
