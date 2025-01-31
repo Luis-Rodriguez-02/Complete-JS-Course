@@ -153,7 +153,6 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
-*/
 
 // CODING CHALLENGE 2
 const massMark = 78;
@@ -177,3 +176,21 @@ if (BMIMark > BMIJohn) {
 } else {
   console.log(`Mark's BMI (${BMIJohn}) is higher than John's (${BMIMark})! `);
 }
+
+// 20. Type Conversion and Coercion
+// Conversion is a manual change of data type, coercion is when the JavaScript interpreter changes the data type
+
+// type conversion
+const inputYear = '1991';
+console.log(Number(inputYear) + 18)
+console.log(inputYear + 18);
+console.log(Number('Jonas'))
+console.log(typeof NaN); // not a valid number
+console.log(String(23));
+
+//type coercion -> happens when an operator is dealing with 2 values that have different types -> js converts one value to match the other to allow for the 
+console.log('I am ' + 23 + 'years old') // numbers + strings converts the number to a string
+console.log('23' - '10' - 3) // minus operator converts strings to numbers and not the other way around. Same thing with *, and /
+*/
+
+// 21. Truthy and Falsy values
