@@ -62,3 +62,14 @@ console.log(descriptiveString);
 
 // Recreate the description variable from the last assignment, this time using the template literal syntax.
 const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
+
+// If / Else Statements
+
+// If your country's population is greater than 33 million, log a string like this to the console: "Portugal's population is 22 million below average" (the 22 is the average of 33 minus the country's population).
+if (population > 33) {
+  console.log(`${country}'s population is above average`);
+} else {
+  console.log(`${country}'s population is ${33 - population} below average`);
+}
+
+// After checking the result, change the population temporarily to 13 and then to 130. See the different results, and set the population back to original.

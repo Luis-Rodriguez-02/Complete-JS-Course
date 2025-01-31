@@ -133,4 +133,47 @@ console.log(luisNew)
 
 // useful to insert variables and multiline strings 
 // before we would concat + vars, and use \n for multiline
+
+
+// 18. If / Else statements
+
+const age = 15;
+if (age >= 18) {
+  console.log("Sarah can start driving");
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Sarah is too young, wait another ${yearsLeft} years.`)
+}
+
+const birthYear = 2002;
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
 */
+
+// CODING CHALLENGE 2
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
+
+// Print a nice output to the console,saying who has the higher BMI.The message is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+if (BMIMark > BMIJohn) {
+  console.log("Mark's BMI is higher than John's!");
+} else {
+  console.log("John's BMI is higher than Mark's!");
+}
+// 2. Use a template literal to include th eBMI values in the outputs. Example:"Mark's BMI (28.3) is higher than John's (23.9)!"
+if (BMIMark > BMIJohn) {
+  console.log(`Mark's BMI (${BMIMark.toPrecision(4)}) is higher than John's (${BMIJohn})! `);
+} else {
+  console.log(`Mark's BMI (${BMIJohn}) is higher than John's (${BMIMark})! `);
+}
