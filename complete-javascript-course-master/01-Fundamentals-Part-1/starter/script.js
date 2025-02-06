@@ -202,7 +202,7 @@ console.log('23' - '10' - 3) // minus operator converts strings to numbers and n
 undefined
 null
 Nan
-*/
+
 // Any value that is not falsy is truthy and truthy values evaluate to true when converted to booleans
 console.log(Boolean(0));
 console.log(Boolean(undefined));
@@ -225,4 +225,26 @@ if (height || height === 0) {
   console.log("height is not defined");
 }
 
+
+// Equality Operators == vs ===
+const age = 18;
+if (age === 18) console.log("You just became an adult");
+// === returns a boolean value, only evaluates to true if both sides are exactly the same
+// == loose equality, does type coercion, 
+// '18' == 18 , is true the string is converted to number while '18' === 18 is false because the string is not converted to a number
+// avoid the loose equality operator because it is prone to bugs, better to convert manually
+const favorite = Number(prompt("Enter your favorite number"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23) {
+  console.log("Cool 23 is an amazing number");
+} else if (favorite === 7) {
+  console.log("7 is also a cool number");
+} else {
+  console.log("Number is not 23 or 7");
+}
+
+if (favorite !== 23) console.log("Why not 23");
+*/
 
