@@ -16,7 +16,6 @@ const prompt = require('prompt-sync')();
 
 // Declare a variable called isIsland and set its value according to your country. The variable should hold a Boolean value. Also declare a variable language, but don't assign it any value yet.
 // lisIsland = false;
-let language;
 
 // Log the types of isIsland, population, country and language to the console.
 // console.log(typeof isIsland);
@@ -28,10 +27,10 @@ let language;
 // let, const and var
 
 // Set the value of language to the language spoken where you live (some countries have multiple languages, but just choose one).
-language = "English;"
+const language = "English;"
 // Think about which variables should be const variables (which values will never change, and which might change?). Then, change these variables to const.
 const country = "United States";
-let population = 18000000
+let population = 1000000
 const continent = "North America";
 const isIsland = false;
 // Try to change one of the changed variables now, and observe what happens.
@@ -86,8 +85,8 @@ console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
 
 
 // Declare a variable numNeighbours based on a prompt input like this:
-let numNeighbours = Number(prompt("How many neighbour countries does your country have? "));
-
+// let numNeighbours = Number(prompt("How many neighbour countries does your country have? "));
+const numNeighbours = 1
 // prompt('How many neighbour countries does your contry have?');
 // If there is only 1 neighbour, log to the console 'Only 1 border!' (use loose equality == for now).
 if (numNeighbours === 1) {
@@ -108,3 +107,18 @@ if (numNeighbours === 1) {
 // Finally, convert numNeighbours to a number, and watch what happens now when you input 1.
 
 // Reflect on why we should use the === operator and type conversion in this situation.
+
+
+// Comment out the previous code so the prompt doesn't get in the way.
+
+// Let's say Sarah is looking for a new country to live in. She wants to live in a country that speaks English, has less than 50 million people and is not an island.
+// Write an if statement to help Sarah figure out if your country is right for her. You will need to write a condition that accounts for all of Sarah's criteria. Take your time with this, and check part of the solution if necessary.
+if (language === 'English' && population < 50 && !isIsland) {
+  console.log(`You should live in ${country} :)`); 
+} else {
+  console.log(`${country} does not meet your criteria :(`)
+}
+
+// If yours is the right country, log a strings like this 'You should live in Portugal :)'. If not, log 'Portugal does not meet your criteria :('.
+
+// Probably your country does not meet all the criteria. So go back and temporarily change some variables in order to make the condition true (unless you live in Canada :D).
