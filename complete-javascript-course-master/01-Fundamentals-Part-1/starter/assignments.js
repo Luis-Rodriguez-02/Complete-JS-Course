@@ -123,3 +123,26 @@ if (language === 'English' && population < 50
 // If yours is the right country, log a strings like this 'You should live in Portugal :)'. If not, log 'Portugal does not meet your criteria :('.
 
 // Probably your country does not meet all the criteria. So go back and temporarily change some variables in order to make the condition true (unless you live in Canada :D).
+
+// The switch statement 
+
+switch (language) {
+  case 'chinese':
+  case 'mandarin':
+    console.log('MOST number of native speakers!');
+    break;
+  case 'spanish':
+    console.log('2nd place in number of native speakers');
+    break;
+  case 'english':
+    console.log('3rd place');
+    break;
+  case 'hindi':
+    console.log('Number 4');
+    break;
+  case 'arabic':
+    console.log("5th most spoken language");
+    break;
+  default:
+    console.log('Great language too :D');
+}
