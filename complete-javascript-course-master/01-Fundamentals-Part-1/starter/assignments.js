@@ -30,7 +30,7 @@ const prompt = require('prompt-sync')();
 const language = "English;"
 // Think about which variables should be const variables (which values will never change, and which might change?). Then, change these variables to const.
 const country = "United States";
-let population = 1000000
+let population = 130
 const continent = "North America";
 const isIsland = false;
 // Try to change one of the changed variables now, and observe what happens.
@@ -146,3 +146,6 @@ switch (language) {
   default:
     console.log('Great language too :D');
 }
+
+// Conditional (Ternary) Operator
+console.log(population > 33 ? `${country}'s populaton is above average` : `${country}'s populaton is below average`);
