@@ -36,3 +36,19 @@ function fruitProcessor(apples, oranges) {
 console.log(fruitProcessor(5, 0));
 
 */
+
+// Function Declaration vs Function Expression
+
+// function declaration
+const currentYear = 2025
+function callAge1 (birthAge) {
+  return currentYear - birthAge;
+}
+
+// function expression -> annonymous functions
+const calcAge2 = function (birthAge) {
+  return currentYear - birthAge;
+}
+
+const luisAge = callAge1(2002);
+console.log(luisAge);
