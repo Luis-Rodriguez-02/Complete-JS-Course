@@ -17,4 +17,22 @@ if (hasDriversLicense) {
   console.log("I can drive");
 }
 
+
+
+// Functions
+
+function logger() {
+  console.log("this function is a logger");
+}
+
+logger(); // calling, running, invoking function
+
+function fruitProcessor(apples, oranges) {
+  console.log(apples, oranges);
+  const juice = `Juice with ${apples} apples and ${oranges} oranges.`
+  return juice;
+}
+
+console.log(fruitProcessor(5, 0));
+
 */
