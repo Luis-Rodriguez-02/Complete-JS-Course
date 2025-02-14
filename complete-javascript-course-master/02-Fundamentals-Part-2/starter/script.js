@@ -108,16 +108,15 @@ console.log(yearsUntilRetirement(1970, "Luis"))
 // A team only wins if it has at least double the average score of the other team. Otherwise, no team wins!
 // Your tasks:
 // 1. Createanarrowfunction'calcAverage'tocalculatetheaverageof3scores
-const calcAverage = (score1, score2, score3) => {
-  return (score1 + score2 + score3) / 3;
-}
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+
 // 2. Usethefunctiontocalculatetheaverageforbothteams
 const avgDolphins = calcAverage(44, 23, 71);
 const avgKoalas = calcAverage(65, 54, 49);
 // 3. Createafunction'checkWinner'thattakestheaveragescoreofeachteam
 // as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner to the console, together with the victory points, according to the rule above. Example: "Koalas win (30 vs. 13)"
 const checkWinner = function (teamOneAverage, teamTwoAverage) {
-  if (teamOneAverage * > teamTwoAverage * 2 || teamTwoAverage > teamOneAverage * 2) {
+  if (teamOneAverage >= teamTwoAverage * 2 || teamTwoAverage >= teamOneAverage * 2) {
     const winner = teamOneAverage > teamTwoAverage ? `Dolphins win ${teamOneAverage} vs ${teamTwoAverage}` : `Koalas win ${teamTwoAverage} vs ${teamOneAverage}`
     return winner
   } else {
