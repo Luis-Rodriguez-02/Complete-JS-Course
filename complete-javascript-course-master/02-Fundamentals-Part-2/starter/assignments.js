@@ -15,7 +15,7 @@ console.log(describeCountry("Russia", 15, "Moscow"));
 
 // The world population is 7900 million people. Create a function declaration called percentageOfWorld1 which receives a population value, and returns the percentage of the world population that the given population represents. For example, China has 1441 million people, so it's about 18.2% of the world population.
 function percentageOfWorld1(population) {
-  return (population / 79000000) * 100
+  return (population / 79) * 100
 }
 // To calculate the percentage, divide the given population value by 7900 and then multiply by 100.
 
@@ -40,3 +40,16 @@ const describePopulation = function (country, population) {
 };
 
 console.log(describePopulation("United States", 33000000));
+
+// Introduction to Arrays
+
+// Create an array containing 4 population values of 4 countries of your choice. You may use the values you have been using previously. Store this array into a variable called populations.
+const populations = [35, 45, 55, 75]
+
+// Log to the console whether the array has 4 elements or not (true or false).
+
+console.log(populations.length === 4);
+
+// Create an array called percentages containing the percentages of the world population for these 4 population values. Use the function percentageOfWorld1 that you created earlier to compute the 4 percentage values.
+const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+console.log(percentages);

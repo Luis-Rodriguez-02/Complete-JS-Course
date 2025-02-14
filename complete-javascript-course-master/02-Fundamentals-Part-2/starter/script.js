@@ -98,7 +98,7 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 }
 
 console.log(yearsUntilRetirement(1970, "Luis"))
-*/
+
 
 // CODING CHALLENGE # 1
 
@@ -130,3 +130,36 @@ console.log(checkWinner(avgKoalas, avgDolphins));
 // 5. Ignoredrawsthistime
 // Test data:
 // § Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49 § Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
+
+*/
+
+// Arrays
+
+const friend1 = 'Luis';
+const friend2 = 'Joe';
+const friend3 = 'Bob';
+
+const friends = ["Luis", "Joe", "Bob"];
+console.log(friends);
+
+const years = new Array(1991, 2000, 2025);
+
+
+console.log(friends[0], friends[1], friends[2]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay";
+console.log(friends);
+
+// we can mutate const arrays because they are not primitve values
+
+// cannot reassign the array though friends = new Array("joe");
+const firstName = 'Jonas'
+const jonas = [firstName, "Jack", 18, friends];
+
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+}
+const yearss = [1990, 1967, 2002, 2010, 2018];
+console.log(calcAge(years[0]));
