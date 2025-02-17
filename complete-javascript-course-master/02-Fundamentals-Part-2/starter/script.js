@@ -131,7 +131,7 @@ console.log(checkWinner(avgKoalas, avgDolphins));
 // Test data:
 // § Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49 § Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
 
-*/
+
 
 // Arrays
 
@@ -163,3 +163,7 @@ const calcAge = function (birthYear) {
 }
 const yearss = [1990, 1967, 2002, 2010, 2018];
 console.log(calcAge(years[0]));
+
+*/
+
+// Basic Array Operations (Methods) 
