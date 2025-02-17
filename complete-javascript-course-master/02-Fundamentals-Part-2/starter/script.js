@@ -167,3 +167,29 @@ console.log(calcAge(years[0]));
 */
 
 // Basic Array Operations (Methods) 
+
+const friends = ['Luis', 'Joe', 'Nicole'];
+ 
+// adds to end of array, returns length of new array
+const newLength = friends.push('Jay');
+console.log(friends, newLength);
+
+// adds to beginning of array, returns length of new array
+friends.unshift('John');
+console.log(friends);
+
+// removes last element of array, returns removed element
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+// removes first element of array
+friends.shift();
+console.log(friends);
+
+// returns index of item, if dne returns -1
+console.log(friends.indexOf("Luis"));
+
+// returns true or false if exists -> strict equality
+console.log(friends.includes('Luis'));
+

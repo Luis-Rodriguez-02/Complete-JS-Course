@@ -53,3 +53,25 @@ console.log(populations.length === 4);
 // Create an array called percentages containing the percentages of the world population for these 4 population values. Use the function percentageOfWorld1 that you created earlier to compute the 4 percentage values.
 const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
 console.log(percentages);
+
+// Basic Array Operations (Methods)
+
+
+// Create an array containing all the neighbouring countries of a country of your choice. Choose a country which has at least 2 or 3 neighbours. Store the array into a variable called neighbours. 
+const neighbors = ['Mexico', 'Canada'];
+
+// At some point, a new country called 'Utopia' is created in the neighbourhood of your selected country, so add it to the end of the neighbours array.
+neighbors.push('Utopia');
+
+// Unfortunately, after some time the new country is dissolved, so remove it from the end of the array.
+neighbors.pop();
+
+// If the neighbours array does not include the country 'Germany', log to the console: 'Probably not a central european country :D'.
+console.log(neighbors);
+console.log(neighbors.includes('Germany') ? true : 'Probably not a central european country :D');
+ 
+
+// Change the name of one of your neighbouring countries. To do that, find the index of the country in the neighbours array, and then use that index to change the array at that index position. For example, you can search for 'Sweden' in the array, and then replace it with 'Republic of Sweden'.
+const indexOfCountry = neighbors.indexOf('Canada');
+neighbors[indexOfCountry] = "Nepal";
+console.log(neighbors)
