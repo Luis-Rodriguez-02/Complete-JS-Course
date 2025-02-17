@@ -74,4 +74,3 @@ console.log(neighbors.includes('Germany') ? true : 'Probably not a central europ
 // Change the name of one of your neighbouring countries. To do that, find the index of the country in the neighbours array, and then use that index to change the array at that index position. For example, you can search for 'Sweden' in the array, and then replace it with 'Republic of Sweden'.
 const indexOfCountry = neighbors.indexOf('Canada');
 neighbors[indexOfCountry] = "Nepal";
-console.log(neighbors)
