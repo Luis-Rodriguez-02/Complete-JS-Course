@@ -213,6 +213,17 @@ const tips = [calcTip(bills[0]),calcTip(bills[1]),calcTip(bills[2])];
 
 // BONUS: Create an array totals containing the total values, so the bill + tip.
 
-
 // TEST DATA: 125, 555, and 44.
 */
+
+// Introduction to Objects
+
+// object literal syntax, we use objects to group variables, order does not matter unlike in arrays.
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Russel',
+  age: 2037 - 1991,
+  job: 'teacher',
+  friends: ['Luis', 'Joe', 'Fred']
+};
+
