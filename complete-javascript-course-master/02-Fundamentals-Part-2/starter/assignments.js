@@ -120,3 +120,13 @@ myCountry.describe();
 for (let i = 1; i <= 50; i++) {
   console.log(`Voter number ${i} is currently voting.`);
 }
+
+// looping arrays, breaking and continuing
+
+const percentages2 = [];
+
+for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld1(populations[i]));
+}
+
+console.log(percentages2);

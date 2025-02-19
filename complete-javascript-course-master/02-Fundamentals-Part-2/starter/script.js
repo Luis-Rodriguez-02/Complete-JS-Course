@@ -344,7 +344,7 @@ console.log(mark.calcBMI(), 'Mark');
 console.log(john.higherBMI(mark));
 
 // TEST DATA: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 m tall.
-// */
+//
 
 
 // The for loop
@@ -352,3 +352,38 @@ console.log(john.higherBMI(mark));
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`Lifting wieghts repetition number ${rep}`);
 }
+  
+*/
+
+// Looping Arrays, Breaking and Continuing
+
+const jonasArray = [
+  'Jonas',
+  'Frakie',
+  2037 - 1991,
+  'teacher',
+  ['Micheal', 'Peter', 'Steven']
+];
+
+for (let i = 0; i < jonasArray.length; i++) {
+  console.log(jonasArray[i]);
+
+  // filling types array
+  // types[i] = typeof jonas[i]
+  // types.push(typeof jonasArray[i])
+}
+
+
+const years = [1991, 2007, 1969, 2020, 'hi']
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  if (typeof years[i] !== 'number') continue; // only numbers
+  ages.push(2037 - years[i]);
+}
+
+console.log(ages)
+
+// continue & break statements
+// continue exits the current iteration and continues to next iteration, while break exits the loop completely
+
