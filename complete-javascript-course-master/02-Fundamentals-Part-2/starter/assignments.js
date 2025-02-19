@@ -115,3 +115,8 @@ myCountry.describe();
 
 // Add a method called checkIsland to the myCountry object. This method will set a new property on the object, called isIsland. isIsland will be true if there are no neighbouring countries, and false if there are. Use the ternary operator to set the property.
 
+// the for loop
+
+for (let i = 1; i <= 50; i++) {
+  console.log(`Voter number ${i} is currently voting.`);
+}

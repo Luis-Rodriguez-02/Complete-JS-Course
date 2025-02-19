@@ -286,7 +286,6 @@ jonas.getSummary();
 // challenge
 // Write a method getSummary , 
 // Jonas is a 46 year old teacher, and he has a drivers license
-*/
 
 // Coding Challenge 3
 
@@ -302,12 +301,12 @@ const mark = {
   fullName: 'Mark Miller',
   mass: 78,
   height: 1.69,
-
+  
   calcBMI: function () {
     this.bmi = this.mass / (this.height * this.height);
     return this.bmi;
   },
-
+  
   higherBMI: function (otherPerson) {
     this.calcBMI();
     otherPerson.calcBMI();
@@ -322,7 +321,7 @@ const john = {
   fullName: 'John Smith',
   mass: 92,
   height: 1.95,
-
+  
   calcBMI: function () {
     this.bmi = this.mass / (this.height * this.height);
     return this.bmi;
@@ -343,4 +342,13 @@ console.log(john.calcBMI(), 'John');
 console.log(mark.calcBMI(), 'Mark');
 
 console.log(john.higherBMI(mark));
+
 // TEST DATA: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 m tall.
+// */
+
+
+// The for loop
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting wieghts repetition number ${rep}`);
+}
