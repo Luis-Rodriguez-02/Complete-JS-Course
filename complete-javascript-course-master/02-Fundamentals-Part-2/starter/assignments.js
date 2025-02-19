@@ -83,6 +83,15 @@ const myCountry = {
   country: 'United States',
   capital: 'Washington DC',
   langauge: 'English',
-  population: '13',
-  neighbors: ['Mexico', 'Candada'];
+  population: 13,
+  neighbors: ['Mexico', 'Candada']
 };
+
+// Dot vs Bracket Notation 
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.langauge} speaking people, ${myCountry.neighbors.length} neighboring countries and a capital called`);
+
+myCountry.population += 2;
+console.log(myCountry.population);
+
+myCountry['population'] -= 2;
+console.log(myCountry.population);

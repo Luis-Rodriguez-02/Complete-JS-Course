@@ -1,5 +1,6 @@
 // Activating Strict Mode
 'use strict';
+const prompt = require('prompt-sync')();
 
 /*
 
@@ -227,3 +228,35 @@ const jonas = {
   friends: ['Luis', 'Joe', 'Fred']
 };
 
+// Dot vs Bracket Notation
+
+// properties ordered alphabetically
+console.log(jonas);
+
+
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+// can use statements in bracket notation
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+const interestedIn = prompt("What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends\n");
+
+
+console.log(jonas[interestedIn]);
+
+if (jonas[interestedIn]) {
+  console.log(jonas[interestedIn])
+} else {
+  console.log("Invalid property");
+}
+
+jonas.location = 'United States';
+jonas['twitter'] = 'N/A';
+
+// Challenge 
+// Jonas has 3 friends and his best friend is called Micheal
+const hardSentence = `${jonas['firstName']} has ${jonas.friends.length} friends, and his best friend is called ${jonas['friends'][0]} `;
+console.log(hardSentence);
