@@ -215,7 +215,6 @@ const tips = [calcTip(bills[0]),calcTip(bills[1]),calcTip(bills[2])];
 // BONUS: Create an array totals containing the total values, so the bill + tip.
 
 // TEST DATA: 125, 555, and 44.
-*/
 
 // Introduction to Objects
 
@@ -260,3 +259,31 @@ jonas['twitter'] = 'N/A';
 // Jonas has 3 friends and his best friend is called Micheal
 const hardSentence = `${jonas['firstName']} has ${jonas.friends.length} friends, and his best friend is called ${jonas['friends'][0]} `;
 console.log(hardSentence);
+*/
+
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Russel',
+  birthYear: 1991,
+  job: 'teacher',
+  friends: ['Luis', 'Joe', 'Fred'],
+  hasDriversLicense: false,
+
+  calcAge: function () {
+    this.age =  2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    console.log(`${this.firstName} is a ${this.calcAge()} year old ${this.job}, and ${this.firstName} has ${this.hasDriversLicense ? 'a' : 'no'} drivers license`);
+  }
+};
+
+console.log(jonas.calcAge())
+console.log(jonas.age);
+jonas.getSummary();
+
+
+// challenge
+// Write a method getSummary , 
+// Jonas is a 46 year old teacher, and he has a drivers license
