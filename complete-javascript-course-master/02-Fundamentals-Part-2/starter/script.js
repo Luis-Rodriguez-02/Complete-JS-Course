@@ -413,3 +413,69 @@ for (let exercise = 1; exercise < 4; exercise++) {
   }
 }
 
+
+// while loop
+let rep = 1;
+while (rep < 5) {
+  rep++;
+  console.log(rep);
+}
+
+let dice = Math.trunc((Math.random() * 6) + 1);
+
+while (dice !== 5) {
+  if (dice === 5) "Loop is about to end";
+  dice = Math.trunc((Math.random() * 6) + 1);
+}
+
+// Challenge #4
+
+// Let's improve Steven's tip calculator even more, this time using loops!
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+// Your tasks:
+
+// Create an array called bills containing all 10 test bill values.
+
+const bills = [
+  10,
+  18,
+  20,
+  25,
+  70,
+  90,
+  45,
+  21,
+  33,
+  87
+];
+
+// Create empty arrays for the tips and the totals (tips and totals)
+  const tips = [];
+  const total = [];
+// Use the calcTip function we wrote before (included in the starter code) to calculate tips and total values (bill + tip) for every bill value in the bills array. Use a for loop to perform the 10 calculations!
+  for (let i = 0; i < bills.length; i++) {
+    tips.push(calcTip(bills[i]));
+    total.push(bills[i] + tips[i]);
+  }
+
+  console.log(total);
+
+
+// TEST DATA: 22, 295, 176, 440, 37, 105, 10, 1100, 86, and 52.
+
+
+
+// BONUS:
+
+// Write a function calcAverage which takes an array called arr as an argument. This function calculates the average of all numbers in the given array. This is a DIFFICULT challenge (we haven't done this before)! Here is how to solve it if you feel like it:
+
+// First, you will need to add up all values in the array. To do the addition, start by creating a variable sum that starts at 0. Then loop over the array using a for loop. In each iteration, add the current value to the sum variable. This way, by the end of the loop, you have all values added together.
+
+// To calculate the average, divide the sum you calculated before by the length of the array (because that's the number of elements).
+
+// Call the function with the totals array.
+
