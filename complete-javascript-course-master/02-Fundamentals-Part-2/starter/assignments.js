@@ -130,3 +130,20 @@ for (let i = 0; i < populations.length; i++) {
 }
 
 console.log(percentages2);
+
+// Looping backwards and loops in loops
+
+// Store this array of arrays into a variable called listOfNeighbours:
+// [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+// Log only the neighbouring countries to the console, one by one, not the entire arrays. Log a string like 'Neighbour: Canada' for each country.
+
+// You will need a loop inside a loop for this. This is actually a bit tricky, so don't worry if it's too difficult for you! But you can still try to figure this out anyway 😉
+
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  console.log(`Group of neighbors ${i+1}`)
+  for (let j = 0; j < listOfNeighbours[i].length; j++) {
+    console.log(` Neighbor: ${listOfNeighbours[i][j]}`);
+  }
+  console.log('\n');
+}

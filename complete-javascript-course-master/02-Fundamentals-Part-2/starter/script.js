@@ -353,7 +353,7 @@ for (let rep = 1; rep <= 10; rep++) {
   console.log(`Lifting wieghts repetition number ${rep}`);
 }
   
-*/
+
 
 // Looping Arrays, Breaking and Continuing
 
@@ -386,4 +386,30 @@ console.log(ages)
 
 // continue & break statements
 // continue exits the current iteration and continues to next iteration, while break exits the loop completely
+*/
+
+
+// Looping backwards and loops in loops
+
+const jonasArray = [
+  'Jonas',
+  'Frakie',
+  2037 - 1991,
+  'teacher',
+  ['Micheal', 'Peter', 'Steven']
+];
+
+// looping backwards
+
+for (let i = jonasArray.length - 1; i >= 0; i--) {
+  console.log(jonasArray[i], i);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`------- starting exercise ${exercise}`)
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Lifting rep ${rep}`);
+  }
+}
 
